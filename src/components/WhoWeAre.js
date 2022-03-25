@@ -1,10 +1,11 @@
+import React from 'react'
 import { Link } from 'gatsby';
-import React from 'react';
 import kerfin from '../assets/images/kerfin.png';
+
 
 const WhoWeAre = () => {
     return (
-        <div className='px-6 sm:px-32 bg-raw-ape'>
+        <div className='px-6 sm:px-32 bg-bg'>
             <h3 className='font-bold text-2xl sm:text-3xl bg-raw-ape  tracking-wide'
                 data-sal="zoom-out"
                 data-sal-delay="100"
@@ -15,11 +16,13 @@ const WhoWeAre = () => {
                 data-sal-delay="100"
                 data-sal-easing="ease"
             >
+                <div className='hidden sm:flex sm:w-2/5'>
+                    <div className='w-9/12'>
+                        <img src={kerfin} alt="kerfin" className='w-full h-full' />
 
-                <div className='w-10/12 sm:w-2/5'>
-                    <img src={kerfin} alt="kerfin" className='object-contain w-9/12 h-full' />
+                    </div>
                 </div>
-                <div className='w-full sm:w-3/5 flex flex-col space-y-4 text-base leading-relaxed tracking-widest sm:tracking-wider'>
+                <div className='w-full sm:w-3/5 flex flex-col space-y-4'>
                     <p>
                         Not an agency, but a network of passionate, experienced, qualified, and insured Marketing and Content Development gurus that work closely with Crypto, NFT, and FinTech companies as an inhouse remote partners to help them scale to the moon.
                     </p>
@@ -33,14 +36,15 @@ const WhoWeAre = () => {
                     </p>
                     <div>
                         <Link to="/" className="outline rounded-full outline-black font-semibold
-                                             outline-offset-1 outline-1  bg-raw-deep-yellow 
-                                               w-64 sm:w-56 py-2 flex justify-center hover:font-bold text-xl
-                                    hover:outline-raw-deep-yellow hover:cursor-pointer hover:text-white">
+                                             outline-offset-1 outline-1  bg-yellow
+                                               w-56 py-2 flex justify-center hover:font-bold text-xl
+                                    hover:outline-yellow hover:cursor-pointer hover:text-white">
                             Contact Us Today!
                         </Link>
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }

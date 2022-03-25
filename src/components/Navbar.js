@@ -1,34 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import PageLinks from '../constants/PageLinks';
 import { FaAlignRight, FaTimes } from 'react-icons/fa';
 import { Link } from 'gatsby';
-import ape from "../assets/images/ape.png";
+import ape from "../assets/images/ape.svg";
 const Navbar = ({ toggleSidebar, isOpen }) => {
-    const url = typeof window !== 'undefined' ? window.location.pathname : '';
-    const [transparentNav, setTransparentNav] = useState(true);
-    useEffect(() => {
-        if (url === "/") {
-            setTransparentNav(true);
-        } else {
-            setTransparentNav(false);
-        }
-    }, [url])
-    const changeNavbarColor = () => {
-        if (url === "/") {
-            if (window.scrollY >= 80) {
-                setTransparentNav(false);
-            } else {
-                setTransparentNav(true);
-            }
-        }
-
-    };
-    if (typeof window !== 'undefined') {
-        window.addEventListener('scroll', changeNavbarColor);
-    }
 
     return (
-        <nav className={`${transparentNav ? "navbar  navbar-transparent" : "navbar shadow"}`}>
+        <nav className="navbar px-6 py-2 bg-bg">
             <div className="nav-center">
                 <div className="nav-header pl-4">
                     <img src={ape} className="w-10 h-10" alt='logo' />
@@ -44,9 +22,10 @@ const Navbar = ({ toggleSidebar, isOpen }) => {
                 </div>
                 <PageLinks styleClass="nav-links"  ></PageLinks>
                 <div className=" contact-link">
-                    <Link to="/" className="outline rounded-full outline-offset-4 outline-1 
+                    <Link to="/" className="outline rounded-full outline-offset-4 outline-1 px-6 py-1
+                                tracking-wider
                                 hover:outline-raw-yellow hover:cursor-pointer hover:text-raw-yellow">
-                        Contact Us
+                        Let's Talk
                     </Link>
                 </div>
             </div>

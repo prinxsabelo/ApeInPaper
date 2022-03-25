@@ -4,7 +4,7 @@ let arr = [];
 arr.length = 5;
 const Crypto = () => {
     return (
-        <div className='px-6 sm:px-32'>
+        <div className='px-6 sm:px-32 mt-24'>
             <div className='flex flex-col items-center mt-8 space-y-4 leading-relaxed'>
 
                 <h3 className='font-bold text-2xl sm:text-3xl bg-raw-ape text-center w-full sm:w-1/2  tracking-wide'
@@ -33,7 +33,7 @@ const Crypto = () => {
                     Your project could be the next.
                 </p>
                 <p>
-                    <Link to="/" className='sm:px-44 text-raw-deep-yellow capitalize tracking-wider bg-raw-ape
+                    <Link to="/" className='sm:px-64 text-raw-deep-yellow capitalize tracking-wider bg-raw-ape
                    font-semibold text-xl'>
                         Get-In-Touch Now!
                     </Link>

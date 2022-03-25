@@ -8,20 +8,20 @@ const WorkTogether = () => {
             <div className='w-full sm:w-1/2 flex flex-col space-y-4' data-sal="fade"
                 data-sal-delay="100"
                 data-sal-easing="ease">
-                <h3 className='font-bold text-2xl sm:text-3xl bg-raw-ape  tracking-wide'>
+                <h3 className='font-bold text-2xl sm:text-3xl bg-bg '>
                     Ready to work together?
                 </h3>
-                <p className='w-full sm:w-9/12 text-xl font-medium bg-raw-ape tracking-wider'>
+                <p className='w-full sm:w-9/12 text-xl font-medium bg-bg '>
                     We are happy to talk to you! Simply drop
-                    us a <span className='text-raw-yellow'> message</span> and we will get back to you
+                    us a <span className='text-yellow'> message</span> and we will get back to you
                     within 24 hours.
 
                 </p>
                 <div>
                     <Link to="/" className="outline rounded-full outline-black font-semibold
-                                             outline-offset-1 outline-1  bg-raw-deep-yellow 
-                                               w-36 py-2 flex justify-center hover:font-bold text-xl
-                                    hover:outline-raw-deep-yellow hover:cursor-pointer hover:text-white">
+                                             outline-offset-1 outline-1  bg-yellow 
+                                               w-36 py-2 flex justify-center hover:font-bold text-lg sm:text-xl 
+                                    hover:outline-yellow hover:cursor-pointer hover:text-white">
                         Let Us Talk
                     </Link>
                 </div>

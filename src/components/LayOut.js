@@ -1,25 +1,24 @@
 import React, { useState } from 'react'
 import Particles from "react-tsparticles";
-import Navbar from './Navbar';
+import { Helmet } from "react-helmet"
 import '../assets/css/main.scss';
+import Navbar from './Navbar';
+import Ape from './Ape';
 import Sidebar from './Sidebar';
-import Alp from './Alp';
-import Youtube from './Youtube';
-import About from './About';
+import WhyApeInPaper from './WhyApeInPaper';
 import Service from './Service';
 import CoreValues from './CoreValues';
+import About from './About';
 import WhoWeAre from './WhoWeAre';
 import Growth from './Growth';
 import Crypto from './Crypto';
 import Team from './Team';
-import Verify from './Verify';
+import Verify from './Testimonials';
 import Goal from './Goal';
 import StandOut from './StandOut';
 import FrequentQuestions from './FrequentQuestions';
 import WorkTogether from './WorkTogether';
 import Footer from './Footer';
-import WhyApeInPaper from './WhyApeInPaper';
-import { Helmet } from "react-helmet"
 
 const LayOut = () => {
     const [isOPen, setIsOpen] = useState(false);
@@ -35,6 +34,8 @@ const LayOut = () => {
     const particlesLoaded = (container) => {
         console.log(container);
     };
+
+
     return (
         <>
             <Helmet>
@@ -47,7 +48,9 @@ const LayOut = () => {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@700&display=swap" rel="stylesheet" />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 
             </Helmet>
             <Particles
@@ -132,15 +135,13 @@ const LayOut = () => {
                     detectRetina: true,
                 }}
             />
-            <div style={{ color: "#fff", position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
+            <div className='layout'>
                 <header>
                     <Navbar toggleSidebar={toggleSidebar} isOpen={isOPen} />
                     <Sidebar toggleSidebar={toggleSidebar} isOpen={isOPen} />
                 </header>
-
-                <main className='mt-20  '>
-                    <Alp />
-                    {/* <Youtube /> */}
+                <main>
+                    <Ape />
                     <About />
                     <WhyApeInPaper />
                     <Service />
@@ -156,13 +157,10 @@ const LayOut = () => {
                     <WorkTogether />
                     <Footer />
                 </main>
-
-
             </div>
-
         </>
-
     )
+
 }
 
 export default LayOut

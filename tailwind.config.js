@@ -5,14 +5,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'raw-yellow': '#fca800',
-        'raw-ape': '#1f1600',
-        'raw-black': '#140F00',
-        'raw-deep-yellow': '#FCA800',
-        'raw-core-values': '#392900'
+        'bg': '#1f1600',
+        'yellow': '#FCA800',
+        'core': '#392900'
       },
     },
   },
   plugins: [],
 }
 
+
+// 'bg': '#1f1600',

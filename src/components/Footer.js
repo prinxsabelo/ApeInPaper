@@ -6,18 +6,18 @@ import {
     FaEnvelope,
     FaLocationArrow
 } from "react-icons/fa"
-import apeFooter from "../assets/images/ape-footer.png";
+import apeFooter from "../assets/images/ape.svg";
 
 const Footer = () => {
     return (
-        <div className='bg-raw-black  w-full mt-16 py-12 px-6 sm:px-32 '>
-            <div className='flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:space-x-8'>
+        <div className='bg-black  w-full mt-16 py-12 px-6 sm:px-32 '>
+            <div className='flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:space-x-12'>
                 <div className='w-full sm:w-2/5 '>
                     <div className='flex gap-4 sm:gap-4'>
                         <div>
                             <img src={apeFooter} alt="ApeInPaper" className='w-full' />
                         </div>
-                        <div className=' w-full sm:pr-6 tracking-widest'>
+                        <div className=' w-full sm:pr-6 tracking-wide'>
                             ApeInPaper is your go-to marketing
                             and content partner that helps existing
                             and new crypto, NFT, and Fintech companies grow their projects online.
@@ -56,11 +56,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex-auto flex flex-col space-y-6'>
-                    <p className='text-raw-deep-yellow font-medium tracking-widest'>Sitemap</p>
-                    <div className='flex flex-col space-y-3 tracking-widest'>
+                    <p className='text-raw-deep-yellow font-medium tracking-wide'>Sitemap</p>
+                    <div className='flex flex-col space-y-3 tracking-wide'>
                         <a href="/">Home</a>
-                        <a href='/'>About Us</a>
-                        <a href='/'>Our Services</a>
+                        <a href='/#about'>About Us</a>
+                        <a href='/#services'>Our Services</a>
                         <a href='/'>Let's Talk</a>
                     </div>
                 </div>

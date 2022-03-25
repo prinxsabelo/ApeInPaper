@@ -27,13 +27,14 @@ const Service = () => {
     const data = useStaticQuery(query);
     const services = data.allContentfulService.nodes;
     return (
-        <div className='service mt-16  px-6 sm:px-32 flex flex-col space-y-6' id="services">
-            <h3 className='font-bold text-2xl sm:text-3xl bg-raw-ape  tracking-wide'
+        <div className='service px-6 sm:px-32 flex flex-col space-y-4 bg-bg' id="services">
+            <div className='h-24'> </div>
+            <h3 className='font-bold text-2xl sm:text-3xl bg-bg  tracking-wide'
                 data-sal="zoom-out"
                 data-sal-delay="100"
                 data-sal-easing="ease"
             >Our Service</h3>
-            <div className='flex flex-col space-y-24'>
+            <div className='flex flex-col space-y-12'>
                 {
                     services.map(serv => {
                         const pathToDemoImage = getImage(serv.image);
@@ -44,13 +45,13 @@ const Service = () => {
                                 data-sal-delay="100"
                                 data-sal-easing="ease"
                             >
-                                <div className='font-semibold bg-raw-ape tracking-widest'>
+                                <div className='font-semibold bg-bg tracking-widest'>
                                     {serv.headline}
                                 </div>
                                 <div className='flex flex-col flex-col-reverse sm:flex-row 
-                                                            sm:gap-6 items-center bg-raw-ape'>
-                                    <p className='text-base sm:text-lg  tracking-wide  bg-raw-ape w-full 
-                                                            sm:w-11/12  tracking-wide leading-relaxed'>
+                                                            sm:gap-6 items-center '>
+                                    <p className='text-base tracking-wide  bg-bg w-full 
+                                                            sm:w-11/12  leading-relaxed'>
                                         {serv.description.description}
                                     </p>
 
@@ -60,12 +61,11 @@ const Service = () => {
                                         data-sal-delay="200"
                                         data-sal-easing="ease" />
 
-
                                 </div>
                                 <Link to="/" className="outline rounded-full outline-black font-semibold
-                                                 outline-offset-1 outline-1 w-36 bg-raw-deep-yellow
+                                                 outline-offset-1 outline-1 w-36 bg-yellow tracking-wide
                                                    py-2 flex justify-center hover:font-bold text-xl
-                                        hover:outline-raw-deep-yellow hover:cursor-pointer hover:text-white">
+                                        hover:outline-bg hover:cursor-pointer hover:text-white">
                                     Let Us Talk!
                                 </Link>
                             </div>
