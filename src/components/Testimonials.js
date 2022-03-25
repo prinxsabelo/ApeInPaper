@@ -47,7 +47,7 @@ const Testimonials = () => {
     return (
         <div className='w-full flex flex-col items-center justify-center mt-20  bg-bg px-6 md:px-16 testimony'>
 
-            <h3 className='font-bold text-2xl md:text-3xl bg-raw-ape text-center tracking-wide'>
+            <h3 className='font-bold text-2xl md:text-3xl bg-bg text-center tracking-wide'>
                 Don’t Just Trust Us, Verify
             </h3>
 
@@ -63,10 +63,10 @@ const Testimonials = () => {
                                     <GatsbyImage image={pathToDemoImage}
                                         className="rounded-full" alt={test.name}
                                     />
-                                    <p className='text-center w-full md:w-11/12 bg-raw-ape '>
+                                    <p className='text-center w-full md:w-11/12 bg-bg '>
                                         {test.message}
                                     </p>
-                                    <div className='text-center bg-raw-ape'>
+                                    <div className='text-center bg-bg'>
                                         <p className='font-semibold'>
                                             {test.name}
                                         </p>
