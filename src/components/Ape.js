@@ -16,7 +16,7 @@ const Ape = () => {
                     The Leading Crypto &amp; blockchain based project PR and Copywriting Network
                 </p>
                 <Link to="/" className="outline rounded-full outline-offset-4 outline-1 w-48 flex justify-center 
-                            tracking-wide hover:outline-hover hover:cursor-pointer hover:text-hover 
+                            tracking-wide hover:outline-hover hover:cursor-pointer hover:text-brand 
                             text-base md:text-xl py-2">
                     Schedule a Call
                 </Link>

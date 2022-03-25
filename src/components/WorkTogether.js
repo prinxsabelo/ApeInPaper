@@ -13,15 +13,15 @@ const WorkTogether = () => {
                 </h3>
                 <p className='w-full md:w-9/12 text-xl font-medium bg-bg '>
                     We are happy to talk to you! Simply drop
-                    us a <span className='text-yellow'> message</span> and we will get back to you
+                    us a <span className='text-brand'> message</span> and we will get back to you
                     within 24 hours.
 
                 </p>
                 <div>
                     <Link to="/" className="outline rounded-full outline-black font-semibold
-                                             outline-offset-1 outline-1  bg-yellow 
+                                             outline-offset-1 outline-1  bg-brand 
                                                w-36 py-2 flex justify-center hover:font-bold text-lg md:text-xl 
-                                    hover:outline-yellow hover:cursor-pointer hover:text-white">
+                                    hover:outline-brand hover:cursor-pointer hover:text-white">
                         Let Us Talk
                     </Link>
                 </div>

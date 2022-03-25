@@ -4,8 +4,9 @@ import stand from '../assets/images/stand.svg';
 
 const StandOut = () => {
     return (
-        <div className='mt-14 md:mt-24 px-6 md:px-32 flex flex-col flex-col-reverse md:flex-row items-center' id="white-paper">
-            <div className='flex-auto flex flex-col space-y-8 md:space-y-16 w-full md:w-2/5 '
+        <div className='mt-14 md:mt-24 px-6 md:px-32 flex flex-col flex-col-reverse md:flex-row items-center' >
+            <div className='h-24'> </div>
+            <div className='flex-auto flex flex-col space-y-8 md:space-y-16 w-full md:w-2/5 ' id="white-paper"
 
             >
                 <div className='w-full md:pr-8 flex flex-col space-y-2 md:space-y-4 '
@@ -40,10 +41,10 @@ const StandOut = () => {
                 </div>
                 <div>
                     <p>
-                        <Link to="/" className="rounded-full  font-semibold
-                                             outline-offset-1 outline-1  bg-yellow
+                        <Link to="/" className="outline rounded-full  font-semibold
+                                             outline-offset-1 outline-1  bg-brand
                                                w-36 py-2 flex justify-center hover:font-bold
-                                    hover:outline-yellow hover:cursor-pointer ">
+                                    hover:outline-brand hover:cursor-pointer ">
                             Let Us Talk
                         </Link>
                     </p>

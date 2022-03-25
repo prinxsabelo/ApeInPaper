@@ -36,9 +36,9 @@ const WhoWeAre = () => {
                     </p>
                     <div>
                         <Link to="/" className="outline rounded-full outline-black font-semibold
-                                             outline-offset-1 outline-1  bg-yellow
+                                             outline-offset-1 outline-1  bg-brand
                                                w-56 py-2 flex justify-center hover:font-bold text-xl
-                                    hover:outline-yellow hover:cursor-pointer hover:text-white">
+                                    hover:outline-brand hover:cursor-pointer hover:text-white">
                             Contact Us Today!
                         </Link>
                     </div>

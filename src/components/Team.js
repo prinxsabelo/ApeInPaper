@@ -52,7 +52,7 @@ const Team = () => {
                         const pathToDemoImage = getImage(m.image);
                         return (
 
-                            <div key={m.id} className='bg-white w-10/12 md:w-1/4 flex flex-col py-4  md:py-8
+                            <div key={m.id} className='bg-white w-11/12 md:w-1/4 flex flex-col py-4  md:py-8
                                      justify-center items-center px-6 
                                      space-y-2 text-black rounded-3xl mb-6 md:mr-12  md:mb-12'
                                 data-sal="fade"
@@ -62,7 +62,7 @@ const Team = () => {
                                 <div>
                                     <GatsbyImage image={pathToDemoImage} alt={m.name} className="rounded-full shadow" />
                                 </div>
-                                <div className=' font-bold tracking-wide text-yellow'>
+                                <div className=' font-bold tracking-wide text-brand'>
                                     {m.name}
                                 </div>
                                 <div className='text-sm text-center font-medium tracking-wide'>
@@ -71,14 +71,14 @@ const Team = () => {
                                 <div className='flex space-x-4'>
 
                                     <a href='twitter.com'>
-                                        <FaTwitter className="text-yellow text-2xl" ></FaTwitter>
+                                        <FaTwitter className="text-brand text-2xl" ></FaTwitter>
                                     </a>
                                     <a href='instagram.com'>
-                                        <FaInstagram className="text-yellow text-2xl"></FaInstagram>
+                                        <FaInstagram className="text-brand text-2xl"></FaInstagram>
                                     </a>
 
                                     <a href='linkedin.com'>
-                                        <FaLinkedin className="text-yellow text-2xl"></FaLinkedin>
+                                        <FaLinkedin className="text-brand text-2xl"></FaLinkedin>
                                     </a>
                                 </div>
                             </div>

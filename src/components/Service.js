@@ -65,9 +65,9 @@ const Service = () => {
 
                                 </div>
                                 <Link to="/" className="outline rounded-full outline-black font-semibold
-                                                 outline-offset-1 outline-1 w-36 bg-yellow tracking-wide
+                                                 outline-offset-1 outline-1 w-36 bg-brand tracking-wide
                                                    py-2 flex justify-center hover:font-bold text-xl
-                                        hover:outline-bg hover:cursor-pointer hover:text-white">
+                                        hover:outline-brand hover:cursor-pointer hover:text-white">
                                     Let Us Talk!
                                 </Link>
                             </div>
