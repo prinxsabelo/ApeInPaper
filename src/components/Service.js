@@ -54,12 +54,14 @@ const Service = () => {
                                                             md:w-11/12  leading-relaxed'>
                                         {serv.description.description}
                                     </p>
+                                    <div className='hidden md:flex'>
+                                        <GatsbyImage image={pathToDemoImage} alt={serv.headline}
+                                            className="object-cover hidden md:flex w-72 bg-transparent"
+                                            data-sal="slide-up"
+                                            data-sal-delay="200"
+                                            data-sal-easing="ease" />
+                                    </div>
 
-                                    <GatsbyImage image={pathToDemoImage} alt={serv.headline}
-                                        className="object-cover hidden md:flex w-72 bg-transparent"
-                                        data-sal="slide-up"
-                                        data-sal-delay="200"
-                                        data-sal-easing="ease" />
 
                                 </div>
                                 <Link to="/" className="outline rounded-full outline-black font-semibold
