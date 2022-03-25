@@ -52,7 +52,7 @@ const Team = () => {
                         const pathToDemoImage = getImage(m.image);
                         return (
 
-                            <div key={m.id} className='bg-white w-11/12 md:w-1/4 flex flex-col py-4  md:py-8
+                            <div key={m.id} className='bg-white w-full md:w-1/4 flex flex-col py-4  md:py-8
                                      justify-center items-center px-6 
                                      space-y-2 text-black rounded-3xl mb-6 md:mr-12  md:mb-12'
                                 data-sal="fade"
