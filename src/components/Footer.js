@@ -10,22 +10,22 @@ import apeFooter from "../assets/images/ape.svg";
 
 const Footer = () => {
     return (
-        <div className='bg-black  w-full mt-16 py-12 px-6 sm:px-32 '>
-            <div className='flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:space-x-12'>
-                <div className='w-full sm:w-2/5 '>
-                    <div className='flex gap-4 sm:gap-4'>
+        <div className='bg-black  w-full mt-16 py-12 px-6 md:px-32 '>
+            <div className='flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-12'>
+                <div className='w-full md:w-2/5 '>
+                    <div className='flex gap-4 md:gap-4'>
                         <div>
                             <img src={apeFooter} alt="ApeInPaper" className='w-full' />
                         </div>
-                        <div className=' w-full sm:pr-6 tracking-wide'>
+                        <div className=' w-full md:pr-6 tracking-wide'>
                             ApeInPaper is your go-to marketing
                             and content partner that helps existing
                             and new crypto, NFT, and Fintech companies grow their projects online.
                         </div>
                     </div>
                 </div>
-                <div className='w-full sm:w-4/12'>
-                    <div className='w-full sm:w-10/12 tracking-widest'>
+                <div className='w-full md:w-4/12'>
+                    <div className='w-full md:w-10/12 tracking-widest'>
                         We are available on all your favorite
                         social platforms.
                     </div>

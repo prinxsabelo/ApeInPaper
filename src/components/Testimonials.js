@@ -50,20 +50,20 @@ const Testimonials = () => {
     }
 
     return (
-        <div className='w-full flex flex-col items-center justify-center mt-20  bg-bg px-6 sm:px-16 testimony'>
+        <div className='w-full flex flex-col items-center justify-center mt-20  bg-bg px-6 md:px-16 testimony'>
 
-            <h3 className='font-bold text-2xl sm:text-3xl bg-raw-ape text-center tracking-wide'>
+            <h3 className='font-bold text-2xl md:text-3xl bg-raw-ape text-center tracking-wide'>
                 Don’t Just Trust Us, Verify
             </h3>
 
-            <div className='w-11/12 sm:w-full mt-8'>
+            <div className='w-11/12 md:w-full mt-8'>
                 <Slider {...settings} >
                     {testimonies.map(test =>
                         <div key={test.id}>
                             <div className='w-full flex flex-col space-y-2  leading-relaxed
-                                        justify-center items-center px-1 sm:px-2'>
+                                        justify-center items-center px-1 md:px-2'>
                                 <img src={test.image} alt={test.name} className="rounded-full" />
-                                <p className='text-center w-full sm:w-11/12 bg-raw-ape '>
+                                <p className='text-center w-full md:w-11/12 bg-raw-ape '>
                                     {test.message}
                                 </p>
                                 <div className='text-center bg-raw-ape'>

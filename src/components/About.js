@@ -12,10 +12,10 @@ const About = () => {
                     <div className='about-center flex flex-col justify-center'
 
                     >
-                        <h3 className='text-2xl sm:text-3xl text-center  px-6 sm:px-0 sm:mx-48 font-bold bg-raw-ape tracking-wide'>
-                            ApeInPaper - the loudspeaker for the Crypto <br className='hidden sm:flex' />& Blockchain based project.
+                        <h3 className='text-2xl md:text-3xl text-center  px-6 md:px-0 md:mx-48 font-bold bg-raw-ape tracking-wide'>
+                            ApeInPaper - the loudspeaker for the Crypto <br className='hidden md:flex' />& Blockchain based project.
                         </h3>
-                        <p className='px-6 sm:px-0 sm:mx-44 mt-4 text-center text-base sm:text-lg bg-bg
+                        <p className='px-6 md:px-0 md:mx-44 mt-4 text-center text-base md:text-lg bg-bg
                               tracking-wide leading-loose'>
                             Every year as cryptocurrency, NFT, and blockchain gain more attraction, it becomes
                             more and more difficult for new cryptos and NFTs projects to attract the right audience

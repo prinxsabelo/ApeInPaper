@@ -61,21 +61,21 @@ const WhyApeInPaper = () => {
         }
     ]
     return (
-        <div className='why mt-28 px-6 sm:px-32'>
+        <div className='why mt-28 px-6 md:px-32'>
 
-            <h3 className='font-bold text-xl sm:text-3xl bg-bg tracking-wide'
+            <h3 className='font-bold text-xl md:text-3xl bg-bg tracking-wide'
                 data-sal="zoom-out"
                 data-sal-delay="100"
                 data-sal-easing="ease"
             >Why Choose ApeinPaper?</h3>
-            <div className='flex flex-col sm:flex-row mt-4 sm:mt-4 w-full flex-wrap'>
+            <div className='flex flex-col md:flex-row mt-4 md:mt-4 w-full flex-wrap'>
                 {chooseArr.map((c, index) =>
-                    <div className='w-full sm:w-1/2 my-4 sm:mt-8 bg-bg' key={index}
+                    <div className='w-full md:w-1/2 my-4 md:mt-8 bg-bg' key={index}
                         data-sal="fade"
                         data-sal-delay={`${index + 1}00`}
                         data-sal-easing="ease"
                     >
-                        <div className='w-full sm:w-11/12 flex flex-col space-y-2 sm:space-y-3'>
+                        <div className='w-full md:w-11/12 flex flex-col space-y-2 md:space-y-3'>
                             <h4 className='text-xl  font-semibold tracking-wide'>{index + 1}. {c.headline}</h4>
                             <p className='text-base  tracking-wide leading-relaxed'>{c.description}</p>
                         </div>

@@ -4,16 +4,16 @@ import growth from '../assets/images/growth.png';
 
 const Growth = () => {
     return (
-        <div className='core-values mt-16 sm:mt-40  px-6 sm:px-32 bg-bg max-w-screen-xl flex flex-col sm:space-y-24'>
+        <div className='core-values mt-16 md:mt-40  px-6 md:px-32 bg-bg max-w-screen-xl flex flex-col md:space-y-24'>
 
-            <div className='flex flex-col sm:flex-row flex-col-reverse items-center sm:-mt-10 sm:gap-24'
+            <div className='flex flex-col md:flex-row flex-col-reverse items-center md:-mt-10 md:gap-24'
                 data-sal="fade"
                 data-sal-delay="100"
                 data-sal-easing="ease"
             >
-                <div className='w-full sm:w-3/5 flex flex-col space-y-4  text-base 
-                        tracking-wider sm:tracking-wider'>
-                    <h3 className='font-bold text-2xl sm:text-3xl bg-bg sm:my-8 w-10/12 sm:w-9/12 tracking-wide'
+                <div className='w-full md:w-3/5 flex flex-col space-y-4  text-base 
+                        tracking-wider md:tracking-wider'>
+                    <h3 className='font-bold text-2xl md:text-3xl bg-bg md:my-8 w-10/12 md:w-9/12 tracking-wide'
                         data-sal="zoom-out"
                         data-sal-delay="100"
                         data-sal-easing="ease"
@@ -21,14 +21,14 @@ const Growth = () => {
                         We Make Your Growth
                         Journey A Lot Easier
                     </h3>
-                    <p className='hidden sm:block text-base'>
+                    <p className='hidden md:block text-base'>
 
                         You <b> PLUS</b> Us, equal a <b>great team</b>. Your project
                         objectives become our goals, and we'll work with
                         you every step of the way to give the experience,
                         knowledge, and comforting shoulder you need.
                     </p>
-                    <p className='hidden sm:block text-base'>
+                    <p className='hidden md:block text-base'>
                         <b>PLUS</b>, our partners equal a <b>network</b>. We like
                         developing relationships so much that if our
                         shoulder isn't needed for any area of your project
@@ -45,16 +45,16 @@ const Growth = () => {
 
 
                 </div>
-                <div className='hidden sm:flex w-10/12 sm:w-2/5'>
+                <div className='hidden md:flex w-10/12 md:w-2/5'>
                     <img src={growth} alt="growth" className='object-contain w-full h-full' />
 
                 </div>
             </div>
-            <div className='flex flex-col w-full items-center space-y-4 mt-4 sm:mt-8'
+            <div className='flex flex-col w-full items-center space-y-4 mt-4 md:mt-8'
                 data-sal="fade"
                 data-sal-delay="100"
                 data-sal-easing="ease" >
-                <p className='w-full sm:w-9/12 sm:text-center tracking-wider leading-relaxed'>
+                <p className='w-full md:w-9/12 md:text-center tracking-wider leading-relaxed'>
                     We’d love to learn more about the future of your business and show how our creativity and
                     influence can deliver results that drive success.
                 </p>

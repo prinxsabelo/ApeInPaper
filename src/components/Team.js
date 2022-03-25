@@ -34,9 +34,9 @@ const Team = () => {
     const members = data.allContentfulTeam.nodes;
 
     return (
-        <div className='mt-24  px-6 sm:px-32'>
-            <h3 className='font-bold text-2xl sm:text-3xl bg-bg  tracking-wide text-center sm:text-left'>The Brightest Minds at Your Service</h3>
-            <p className='mt-2 tracking-wide leading-7 text-base w-full sm:w-11/12 bg-bg text-center sm:text-left'>
+        <div className='mt-24  px-6 md:px-32'>
+            <h3 className='font-bold text-2xl md:text-3xl bg-bg  tracking-wide text-center md:text-left'>The Brightest Minds at Your Service</h3>
+            <p className='mt-2 tracking-wide leading-7 text-base w-full md:w-11/12 bg-bg text-center md:text-left'>
                 Our team of tech-savvy marketers, copywriters, PR pros and growth hackers
                 works non-stop to keep clients a head of the game. Dedicated to grow your
                 company by bringing our diverse range of backgrounds, unique sets of skills,
@@ -44,17 +44,17 @@ const Team = () => {
                 products and services to the blockchain sector.
             </p>
             <div className='mt-24 flex flex-col items-center justify-center'>
-                <h4 className='font-bold text-2xl sm:text-3xl bg-bg  tracking-wide'>
+                <h4 className='font-bold text-2xl md:text-3xl bg-bg  tracking-wide'>
                     Meet The Team
                 </h4>
-                <div className='flex flex-col sm:flex-row w-full items-center flex-wrap mt-6'>
+                <div className='flex flex-col md:flex-row w-full items-center flex-wrap mt-6'>
                     {members.map((m, index) => {
                         const pathToDemoImage = getImage(m.image);
                         return (
 
-                            <div key={m.id} className='bg-white w-10/12 sm:w-1/4 flex flex-col py-4  sm:py-8
+                            <div key={m.id} className='bg-white w-10/12 md:w-1/4 flex flex-col py-4  md:py-8
                                      justify-center items-center px-6 
-                                     space-y-2 text-black rounded-3xl mb-6 sm:mr-12  sm:mb-12'
+                                     space-y-2 text-black rounded-3xl mb-6 md:mr-12  md:mb-12'
                                 data-sal="fade"
                                 data-sal-delay={`${index + 1}00`}
                                 data-sal-easing="ease"

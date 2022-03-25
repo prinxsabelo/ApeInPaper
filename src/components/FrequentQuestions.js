@@ -58,14 +58,14 @@ const secondArr = [
 
 const FrequentQuestions = () => {
     return (
-        <div className='mt-14 px-6 sm:px-32 bg-bg '>
-            <h3 className='font-bold text-2xl sm:text-3xl bg-raw-ape'>
+        <div className='mt-14 px-6 md:px-32 bg-bg '>
+            <h3 className='font-bold text-2xl md:text-3xl bg-raw-ape'>
                 Frequently Asked Questions?
             </h3>
-            <div className='flex flex-col sm:flex-row w-full items-start sm:space-x-8'>
-                <div className='w-full sm:w-1/2 flex flex-col'>
+            <div className='flex flex-col md:flex-row w-full items-start md:space-x-8'>
+                <div className='w-full md:w-1/2 flex flex-col'>
                     {firstArr.map((q, index) => (
-                        <div key={index} className='w-full sm:w-11/12 my-3 flex-1 p-2  rounded-xl 
+                        <div key={index} className='w-full md:w-11/12 my-3 flex-1 p-2  rounded-xl 
                                         flex flex-col space-y-2'
                             data-sal="fade"
                             data-sal-delay={`${index + 1}00`}
@@ -79,9 +79,9 @@ const FrequentQuestions = () => {
                         </div>
                     ))}
                 </div>
-                <div className='w-full sm:w-1/2 flex flex-col'>
+                <div className='w-full md:w-1/2 flex flex-col'>
                     {secondArr.map((q, index) => (
-                        <div key={index} className='w-full sm:w-11/12 my-3 flex-1 p-2  rounded-xl 
+                        <div key={index} className='w-full md:w-11/12 my-3 flex-1 p-2  rounded-xl 
                                         flex flex-col space-y-2'
                             data-sal="fade"
                             data-sal-delay={`${index + 1}00`}
