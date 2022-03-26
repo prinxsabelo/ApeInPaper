@@ -12,17 +12,14 @@ import {
 
 const query = graphql`
 {
-  allContentfulTeam(sort: {order: ASC, fields: contentful_id}) {
+  allContentfulTeam(filter: {}, sort: {fields: createdAt, order: ASC}) {
     nodes {
       name
-      role
-      twitter
-      facebook
-      linkedin
-      id
       image {
         gatsbyImageData
       }
+      id
+      role
     }
   }
 }
