@@ -10,7 +10,7 @@ import apeFooter from "../assets/images/ape.svg";
 
 const Footer = () => {
     return (
-        <div className='bg-black  w-full mt-16 py-12 px-6 md:px-32 '>
+        <div className='bg-black  w-full mt-16 py-12 px-4 md:px-32 '>
             <div className='flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-12'>
                 <div className='w-full md:w-2/5 '>
                     <div className='flex gap-4 md:gap-4'>

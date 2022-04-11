@@ -1,11 +1,11 @@
 import React from 'react'
 import cover from '../assets/images/cover.svg';
-import { Link } from 'gatsby';
+import ButtonLink from './ButtonLink';
 
 const Ape = () => {
     return (
-        <div className='mt-16 flex flex-col flex-col-reverse md:flex-row px-6 md:px-32 md:gap-12 md:mt-24'>
-            <div className='w-full md:w-1/2 flex flex-col  justify-center space-y-1 md:space-y-3'
+        <div className='mt-16 flex flex-col flex-col-reverse md:flex-row px-4 md:px-32 md:gap-12 md:mt-24'>
+            <div className='w-full md:w-1/2 flex flex-col  justify-center space-y-1 md:space-y-3 bg-bg md:bg-transparent'
                 data-sal="zoom-in"
                 data-sal-delay="200"
                 data-sal-easing="ease"
@@ -15,11 +15,15 @@ const Ape = () => {
                 <p className='text-base md:text-xl tracking-wide leading-relaxed	pb-4 md:pr-4'>
                     The Leading Crypto &amp; blockchain based project PR and Copywriting Network
                 </p>
-                <Link to="/" className="outline rounded-full outline-offset-4 outline-1 w-48 flex justify-center 
+                {/* <Link to="/" className="outline rounded-full outline-offset-4 outline-1 w-48 flex justify-center 
                             tracking-wide hover:outline-hover hover:cursor-pointer hover:text-brand 
                             text-base md:text-xl py-2">
+
+                </Link> */}
+                <ButtonLink to="/" className='bg-transparent outline outline-offset-4
+                                       hover:bg-brand hover:text-yellow-50  outline-1 outline-brand'>
                     Schedule a Call
-                </Link>
+                </ButtonLink>
             </div>
             <div className='mt-0'>
                 <img src={cover} alt="cover" className='mt-4'

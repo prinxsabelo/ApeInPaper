@@ -1,19 +1,19 @@
 import React from 'react'
-import { Link } from 'gatsby';
 import kerfin from '../assets/images/kerfin.png';
+import ButtonLink from './ButtonLink';
 
 
 const WhoWeAre = () => {
     return (
-        <div className='px-6 md:px-32 bg-bg'>
-            <h3 className='font-bold text-2xl md:text-3xl bg-raw-ape  tracking-wide'
+        <div className='px-4 md:px-32 bg-bg'>
+            <h3 className='font-bold text-lg md:text-3xl  tracking-wide'
                 data-sal="zoom-out"
-                data-sal-delay="100"
+                // data-sal-delay="100"
                 data-sal-easing="ease"
             >Who We Are?</h3>
             <div className='flex flex-col md:flex-row items-center mt-4'
                 data-sal="fade"
-                data-sal-delay="100"
+                // data-sal-delay="100"
                 data-sal-easing="ease"
             >
                 <div className='hidden md:flex md:w-2/5'>
@@ -22,7 +22,7 @@ const WhoWeAre = () => {
 
                     </div>
                 </div>
-                <div className='w-full md:w-3/5 flex flex-col space-y-4'>
+                <div className='w-full md:w-3/5 flex flex-col space-y-4 text-base md:text-lg' >
                     <p>
                         Not an agency, but a network of passionate, experienced, qualified, and insured Marketing and Content Development gurus that work closely with Crypto, NFT, and FinTech companies as an inhouse remote partners to help them scale to the moon.
                     </p>
@@ -34,13 +34,11 @@ const WhoWeAre = () => {
                         ApeInPaper believe in the power of collaboration,
                         co-creation, data and ideas to create maximum impact, and we take an integrated approach to marketing and communications with a heavy emphasis on working with clients to set up proper tracking and accreditation processes within their products to measure content and campaign performance at a very granular level against KPI’s.
                     </p>
-                    <div>
-                        <Link to="/" className="outline rounded-full outline-black font-semibold
-                                             outline-offset-1 outline-1  bg-brand
-                                               w-56 py-2 flex justify-center hover:font-bold text-xl
-                                    hover:outline-brand hover:cursor-pointer hover:text-white">
+                    <div className='pt-2'>
+                        <ButtonLink to="/">
                             Contact Us Today!
-                        </Link>
+                        </ButtonLink>
+
                     </div>
                 </div>
             </div>

@@ -4,9 +4,9 @@ import tog from '../assets/images/tog.svg';
 
 const WorkTogether = () => {
     return (
-        <div className='px-6 md:px-32 mt-14 md:mt-24 flex flex-col flex-col-reverse md:flex-row items-center'>
+        <div className='px-4 md:px-32 mt-14 md:mt-24 flex flex-col flex-col-reverse md:flex-row items-center'>
             <div className='w-full md:w-1/2 flex flex-col space-y-4' data-sal="fade"
-                data-sal-delay="100"
+                // data-sal-delay="100"
                 data-sal-easing="ease">
                 <h3 className='font-bold text-2xl md:text-3xl bg-bg '>
                     Ready to work together?
@@ -27,7 +27,7 @@ const WorkTogether = () => {
                 </div>
             </div>
             <div className='w-1/2' data-sal="slide-up"
-                data-sal-delay="100"
+                // data-sal-delay="100"
                 data-sal-easing="ease">
                 <img src={tog} alt="work" />
             </div>

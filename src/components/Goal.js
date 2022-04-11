@@ -20,8 +20,8 @@ const Goal = () => {
         };
     }
     return (
-        <div className='mt-14 px-6 md:px-32 flex flex-col items-center space-y-8'>
-            <h3 className='font-bold text-2xl md:text-3xl bg-raw-ape text-center tracking-wide'>
+        <div className='pt-14 px-4 md:px-32 flex flex-col items-center space-y-8'>
+            <h3 className='font-bold text-lg md:text-3xl  tracking-wide'>
                 Our Goal is to Help Businesses Grow
             </h3>
             <div className='w-11/12 md:w-full mt-8'>

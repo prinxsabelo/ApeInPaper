@@ -58,8 +58,8 @@ const secondArr = [
 
 const FrequentQuestions = () => {
     return (
-        <div className='mt-14 px-6 md:px-32 bg-bg '>
-            <h3 className='font-bold text-2xl md:text-3xl bg-raw-ape'>
+        <div className='pt-14 px-4 md:px-32 bg-bg '>
+            <h3 className='font-bold text-lg md:text-3xl  tracking-wide'>
                 Frequently Asked Questions?
             </h3>
             <div className='flex flex-col md:flex-row w-full items-start md:space-x-8'>
@@ -68,7 +68,7 @@ const FrequentQuestions = () => {
                         <div key={index} className='w-full md:w-11/12 my-3 flex-1 p-2  rounded-xl 
                                         flex flex-col space-y-2'
                             data-sal="fade"
-                            data-sal-delay={`${index + 1}00`}
+                            // data-sal-delay={`${index + 1}00`}
                             data-sal-easing="slide-up">
                             <p className='font-bold tracking-wide'>
                                 {q.question}
@@ -84,7 +84,7 @@ const FrequentQuestions = () => {
                         <div key={index} className='w-full md:w-11/12 my-3 flex-1 p-2  rounded-xl 
                                         flex flex-col space-y-2'
                             data-sal="fade"
-                            data-sal-delay={`${index + 1}00`}
+                            // data-sal-delay={`${index + 1}00`}
                             data-sal-easing="slide-up">
                             <p className='font-bold tracking-wide'>
                                 {q.question}

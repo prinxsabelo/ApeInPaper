@@ -143,7 +143,7 @@ body {
   padding: 0;
   border-top: none;
   margin-right: 1rem;
-  font-size: 1rem;
+  // font-size: 1rem;
 }
 
 /*
@@ -375,7 +375,7 @@ CoreValues
 }
 @media screen and (min-width: 768px) {
   .core-right {
-    background: url("../images/core.svg");
+    background: url("../images/core1.svg");
     width: 18rem;
     height: 400px;
     position: absolute;
@@ -388,4 +388,23 @@ CoreValues
 .core-img {
   width: 425px;
   height: 515px;
+}
+.core1 {
+  background: url("../images/core1.svg");
+  width: 10rem;
+  height: 30rem;
+  position: absolute;
+  right: -4rem;
+  transform: rotate(15deg);
+  top: -2rem;
+  background-repeat: no-repeat;
+}
+.core2 {
+  background: url("../images/core2.svg");
+  width: 5rem;
+  height: 15rem;
+  position: absolute;
+  right: -1rem;
+  top: 26rem;
+  background-repeat: no-repeat;
 }

@@ -14,7 +14,7 @@ import Growth from './Growth';
 import Crypto from './Crypto';
 import Team from './Team';
 import Verify from './Testimonials';
-import Goal from './Goal';
+// import Goal from './Goal';
 import StandOut from './StandOut';
 import FrequentQuestions from './FrequentQuestions';
 import WorkTogether from './WorkTogether';
@@ -26,13 +26,13 @@ const LayOut = () => {
         setIsOpen(!isOPen);
     }
     const particlesInit = (main) => {
-        console.log(main);
+        // console.log(main);
 
         // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
     };
 
     const particlesLoaded = (container) => {
-        console.log(container);
+        // console.log(container);
     };
 
 
@@ -151,7 +151,7 @@ const LayOut = () => {
                     <Crypto />
                     <Team />
                     <Verify />
-                    <Goal />
+                    {/* <Goal /> */}
                     <StandOut />
                     <FrequentQuestions />
                     <WorkTogether />

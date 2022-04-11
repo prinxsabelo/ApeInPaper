@@ -45,9 +45,9 @@ const Testimonials = () => {
     }
 
     return (
-        <div className='w-full flex flex-col items-center justify-center mt-20  bg-bg px-6 md:px-16 testimony'>
+        <div className='w-full flex flex-col items-center justify-center py-20  bg-bg px-4 md:px-16 testimony'>
 
-            <h3 className='font-bold text-2xl md:text-3xl bg-bg text-center tracking-wide'>
+            <h3 className='font-bold text-lg md:text-3xl  tracking-wide'>
                 Don’t Just Trust Us, Verify
             </h3>
 
@@ -57,8 +57,9 @@ const Testimonials = () => {
                         const pathToDemoImage = getImage(test.image);
 
                         return (
-                            <div key={test.id}>
-                                <div className='w-full flex flex-col space-y-2  leading-relaxed
+                            <div key={test.id} className="bg-bg">
+                                <div className='w-full flex flex-col space-y-2  leading-relaxed 
+                                    text-sm md:text-base
                                         justify-center items-center px-1 md:px-2'>
                                     <GatsbyImage image={pathToDemoImage}
                                         className="rounded-full" alt={test.name}
@@ -70,7 +71,7 @@ const Testimonials = () => {
                                         <p className='font-semibold'>
                                             {test.name}
                                         </p>
-                                        <p className='text-brand mt-1 font-medium tracking-wide'>
+                                        <p className='text-brand mt-1  font-medium tracking-wide'>
                                             {test.role}
                                         </p>
                                     </div>

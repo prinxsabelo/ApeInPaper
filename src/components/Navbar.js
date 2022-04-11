@@ -6,7 +6,7 @@ import ape from "../assets/images/ape.svg";
 const Navbar = ({ toggleSidebar, isOpen }) => {
 
     return (
-        <nav className="navbar px-6 py-2 bg-bg">
+        <nav className="navbar px-4 py-2 bg-bg">
             <div className="nav-center">
                 <div className="nav-header">
                     <img src={ape} className="w-10 h-10" alt='logo' />
@@ -20,10 +20,10 @@ const Navbar = ({ toggleSidebar, isOpen }) => {
 
                     </button>
                 </div>
-                <PageLinks styleClass="nav-links"  ></PageLinks>
+                <PageLinks styleClass="nav-links text-xl"  ></PageLinks>
                 <div className=" contact-link">
-                    <Link to="/" className="outline rounded-full outline-offset-4 outline-1 px-6 py-1
-                                tracking-wider
+                    <Link to="/" className="outline rounded-full outline-offset-4 outline-1 px-4 py-1
+                                tracking-wider text-xl font-bold
                                 hover:outline-brand hover:cursor-pointer hover:text-brand">
                         Let's Talk
                     </Link>
