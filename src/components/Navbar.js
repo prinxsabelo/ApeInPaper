@@ -2,14 +2,18 @@ import React from 'react'
 import PageLinks from '../constants/PageLinks';
 import { FaAlignRight, FaTimes } from 'react-icons/fa';
 import { Link } from 'gatsby';
-import ape from "../assets/images/ape.svg";
+import Logo from '../../static/ape.jpg';
+
 const Navbar = ({ toggleSidebar, isOpen }) => {
 
     return (
-        <nav className="navbar px-4 py-2 bg-bg">
+        <nav className="navbar px-4 bg-bg">
             <div className="nav-center">
                 <div className="nav-header">
-                    <img src={ape} className="w-10 h-10" alt='logo' />
+                    <div className='w-20'>
+                        <img src={Logo} className="object-contain" alt='logo' />
+
+                    </div>
 
                     <button type="button" className="toggle-btn" onClick={toggleSidebar}>
                         {isOpen ?

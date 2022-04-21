@@ -10,11 +10,14 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   plugins: [
-    `gatsby-plugin-sass`,
     'gatsby-plugin-postcss',
-    `gatsby-plugin-scroll-reveal`,
-    `gatsby-plugin-image`,
     "gatsby-plugin-react-helmet",
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-scroll-reveal`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -30,6 +33,15 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_API_KEY,
       },
     },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 75,
+      },
+    },
+
 
   ],
 

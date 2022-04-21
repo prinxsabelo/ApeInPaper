@@ -3,25 +3,19 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-
-import {
-
-    FaTwitterSquare,
-} from "react-icons/fa"
-
 const query = graphql`
-{
-  allContentfulTeam(filter: {}, sort: {fields: createdAt, order: ASC}) {
-    nodes {
-      name
-      image {
-        gatsbyImageData
+  {
+    allContentfulTeam(sort: {order: ASC, fields: createdAt}) {
+      nodes {
+        id
+        name
+        role
+        image {
+          gatsbyImageData(placeholder: BLURRED)
+        }
       }
-      id
-      role
     }
   }
-}
 `
 
 
@@ -63,9 +57,6 @@ const Team = () => {
                                     <div className='font-black text-lg md:text-xl tracking-wide text-brand'>
                                         {m.name}
                                     </div>
-                                    <a href='twitter.com'>
-                                        <FaTwitterSquare className="text-brand text-2xl" size={25} ></FaTwitterSquare>
-                                    </a>
                                 </div>
 
                                 <div className='text-base text-center font-medium tracking-wider'>

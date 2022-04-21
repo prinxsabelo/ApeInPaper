@@ -1,6 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import ButtonLink from './ButtonLink'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
 const query = graphql`
                 {
@@ -79,15 +78,11 @@ const CoreValues = () => {
             </div>
 
             <div className='my-12 md:my-24 flex justify-center'>
-                <ButtonLink to="/" className='text-sm tracking-wider font-black  
-                        bg-transparent md:bg-brand md:text-yellow-50 text-yellow-50 p-2
-                             md:px-8 md:py-4 md:text-xl'>
+                <Link to="/" className='md:bg-brand text-brand md:text-yellow-50 font-black text-base md:text-xl 
+                                    md:px-6 md:py-3  md:rounded-full  hover:outline outline-offset-1 hover:outline-1 '>
                     Get A Free 40 Minute Consultation Call
-                </ButtonLink>
-                {/* <Link to="/" className=' text-raw-deep-yellow capitalize tracking-widest bg-bg text-base md:text-xl
-                   font-semibold '>
-                  
-                </Link> */}
+                </Link>
+              
             </div>
 
         </div>

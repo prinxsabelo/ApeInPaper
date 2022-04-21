@@ -37,9 +37,12 @@ const tempLinks = data.map(link => {
 
 const PageLinks = ({ styleClass, toggleSidebar }) => {
     return (
-        <ul className={`page-links tracking-wider text-xl font-bold ${styleClass ? styleClass : ""}`} onClick={toggleSidebar}>
-            {tempLinks}
-        </ul>
+        <button onClick={toggleSidebar} onKeyDown={toggleSidebar}>
+            <ul className={`page-links tracking-wider text-xl font-bold ${styleClass ? styleClass : ""}`} >
+                {tempLinks}
+            </ul>
+        </button>
+
     )
 }
 export default PageLinks;

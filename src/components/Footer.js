@@ -6,7 +6,8 @@ import {
     FaEnvelope,
     FaLocationArrow
 } from "react-icons/fa"
-import apeFooter from "../assets/images/ape.svg";
+import Logo from '../../static/ape.jpg';
+
 
 const Footer = () => {
     return (
@@ -14,9 +15,12 @@ const Footer = () => {
             <div className='flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-12'>
                 <div className='w-full md:w-2/5 '>
                     <div className='flex gap-4 md:gap-4'>
-                        <div>
-                            <img src={apeFooter} alt="ApeInPaper" className='w-full' />
+
+                        <div className='w-20'>
+                            <img src={Logo} className="object-cover" alt='logo' />
+
                         </div>
+
                         <div className=' w-full md:pr-6 tracking-wide'>
                             ApeInPaper is your go-to marketing
                             and content partner that helps existing

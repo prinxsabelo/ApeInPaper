@@ -1,8 +1,23 @@
 import React from 'react'
-import stand from '../assets/images/stand.svg';
 import ButtonLink from './ButtonLink';
+import { graphql, useStaticQuery } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
+
+const queryMedia = graphql`
+  {
+    contentfulStandOutMedia {
+      image {
+        gatsbyImageData(placeholder: BLURRED)
+      }
+    }
+  }
+`
 const StandOut = () => {
+    const media = useStaticQuery(queryMedia);
+    // const image = media.contentfulStandOutMedia.image;
+    const pathToDemoImage = getImage(media.contentfulStandOutMedia.image);
+
     return (
         <div className='pt-14 md:pt-24 px-4 md:px-32 flex flex-col flex-col-reverse md:flex-row items-center bg-bg' >
             <div className='h-24'> </div>
@@ -46,7 +61,8 @@ const StandOut = () => {
                 data-sal="slide-up"
                 // data-sal-delay="100"
                 data-sal-easing="ease">
-                <img src={stand} alt="stand-cover" />
+                <GatsbyImage image={pathToDemoImage} alt=""
+                />
             </div>
         </div>
     )
