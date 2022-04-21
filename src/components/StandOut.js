@@ -55,7 +55,7 @@ const StandOut = () => {
 
                     </p>
                 </div>
-                <ButtonLink to="/">Let us Talk</ButtonLink>
+                <ButtonLink to="https://twitter.com/Apeinpaperdotcm?s=20&t=C2EjohMNEp5Ga_i0ERHuyQ">Let us Talk</ButtonLink>
             </div>
             <div className='w-full md:w-1/2 hidden md:flex'
                 data-sal="slide-up"

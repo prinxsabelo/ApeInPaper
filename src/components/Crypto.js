@@ -1,8 +1,26 @@
 import React from 'react'
 import ButtonLink from './ButtonLink';
+import { graphql, useStaticQuery } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
 let arr = [];
 arr.length = 5;
+const query = graphql`
+{
+  allContentfulTrusted {
+    nodes {
+      image {
+        gatsbyImageData(placeholder: TRACED_SVG)
+      }
+    }
+  }
+}
+`
 const Crypto = () => {
+    const media = useStaticQuery(query);
+    // const pathToDemoImage = getImage(media.allContentfulTrusted.nodes);
+    const trusted = media.allContentfulTrusted.nodes;
+
     return (
         <div className='px-4 md:px-32 pt-24 bg-bg'>
             <div className='flex flex-col items-center mt-8 space-y-4 leading-relaxed'>
@@ -19,13 +37,21 @@ const Crypto = () => {
                     crypto, NFT, and fintech related businesses.
                 </p>
             </div>
-            <div className='flex flex-wrap justify-center my-4'>
-                {Array.apply(null, { length: 10 }).map((x, index) =>
-                    <div key={index}
-                        data-sal="slide-left"
-                        // data-sal-delay={`${index + 1}00`}
-                        data-sal-easing="ease"
-                        className='w-16 h-16 md:w-36 md:h-36 bg-gray-100 p-3 mr-4 md:mr-8  mb-8'></div>
+            <div className='flex flex-wrap justify-center my-4 mt-6'>
+                {trusted.map((t, index) => {
+                    const pathToDemoImage = getImage(t.image);
+                    return (
+                        <div key={index}
+                            data-sal="slide-left"
+                            // data-sal-delay={`${index + 1}00`}
+                            data-sal-easing="ease"
+                            className='w-16 h-16 md:w-36 md:h-36 bg-gray-100  mr-4 md:mr-8  mb-8'>
+                            <GatsbyImage image={pathToDemoImage} alt=""
+                            />
+                        </div>
+                    )
+                }
+
                 )}
             </div>
             <div className='flex flex-col items-center  w-full space-y-4'>
@@ -33,7 +59,7 @@ const Crypto = () => {
                     Your project could be the next.
                 </p>
 
-                <ButtonLink to="/" className=' tracking-wider font-black  
+                <ButtonLink to="https://twitter.com/Apeinpaperdotcm?s=20&t=C2EjohMNEp5Ga_i0ERHuyQ" className=' tracking-wider font-black  
                         bg-transparent md:bg-brand text-yellow-50  p-2
                              md:px-8 text-base md:py-4 md:text-xl '>
                     Get-In-Touch Now!

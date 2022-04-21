@@ -1,10 +1,21 @@
 import React from 'react'
-// import { graphql, useStaticQuery } from 'gatsby'
-import why from '../assets/images/why.svg';
+import { graphql, useStaticQuery } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
+const query = graphql`
+{
+  contentfulWhyMedia {
+    image {
+      gatsbyImageData(placeholder: TRACED_SVG)
+    }
+  }
+}
+`
 
 const WhyApeInPaper = () => {
-    // const data = useStaticQuery(query);
+    const media = useStaticQuery(query);
+    const pathToDemoImage = getImage(media.contentfulWhyMedia.image);
+
     // const chooseArr = data.allContentfulWhyApeInPaper.nodes;
     const chooseArr = [
         {
@@ -36,10 +47,10 @@ const WhyApeInPaper = () => {
     return (
         <div className='why pt-28 px-4 md:px-32 bg-bg'>
             <div className='flex md:hidden w-full justify-center'
-                data-sal="zoom-out"
-
+                data-sal="fade"
                 data-sal-easing="ease">
-                <img src={why} alt="" className='w-10/12' />
+                <GatsbyImage image={pathToDemoImage} alt=""
+                />
             </div>
             <h3 className='font-bold text-lg md:text-3xl bg-bg tracking-wide'
                 data-sal="zoom-out"

@@ -1,4 +1,3 @@
-import { Link } from 'gatsby';
 import React from 'react'
 import tog from '../assets/images/tog.svg';
 
@@ -18,12 +17,12 @@ const WorkTogether = () => {
 
                 </p>
                 <div>
-                    <Link to="/" className="outline rounded-full outline-black font-semibold
+                    <a href="https://twitter.com/Apeinpaperdotcm?s=20&t=C2EjohMNEp5Ga_i0ERHuyQ" className="outline rounded-full outline-black font-semibold
                                              outline-offset-1 outline-1  bg-brand 
                                                w-36 py-2 flex justify-center hover:font-bold text-lg md:text-xl 
                                     hover:outline-brand hover:cursor-pointer hover:text-white">
                         Let Us Talk
-                    </Link>
+                    </a>
                 </div>
             </div>
             <div className='w-1/2' data-sal="slide-up"

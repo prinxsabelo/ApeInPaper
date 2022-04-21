@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, Link, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const query = graphql`
                 {
@@ -78,11 +78,11 @@ const CoreValues = () => {
             </div>
 
             <div className='my-12 md:my-24 flex justify-center'>
-                <Link to="/" className='md:bg-brand text-brand md:text-yellow-50 font-black text-base md:text-xl 
+                <a href="https://twitter.com/Apeinpaperdotcm?s=20&t=C2EjohMNEp5Ga_i0ERHuyQ" className='md:bg-brand text-brand md:text-yellow-50 font-black text-base md:text-xl 
                                     md:px-6 md:py-3  md:rounded-full  hover:outline outline-offset-1 hover:outline-1 '>
                     Get A Free 40 Minute Consultation Call
-                </Link>
-              
+                </a>
+
             </div>
 
         </div>

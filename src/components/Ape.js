@@ -49,7 +49,7 @@ const Ape = () => {
                                text-base md:text-xl py-2">
    
                    </Link> */}
-              <ButtonLink to="/" className='bg-transparent outline outline-offset-4
+              <ButtonLink to="https://twitter.com/Apeinpaperdotcm?s=20&t=C2EjohMNEp5Ga_i0ERHuyQ" className='bg-transparent outline outline-offset-4
                                           hover:bg-brand hover:text-yellow-50  outline-1 outline-brand'>
                 Schedule a Call
               </ButtonLink>
