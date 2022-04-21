@@ -35,8 +35,8 @@ const Ape = () => {
           <div key={c.id} className='mt-16 flex flex-col flex-col-reverse md:flex-row px-4 md:px-32 md:gap-12 md:mt-24'>
 
             <div className='w-full md:w-1/2 flex flex-col  justify-center space-y-1 md:space-y-3 bg-bg md:bg-transparent'
-              data-sal="zoom-in"
-              data-sal-delay="200"
+              data-sal="fade"
+              data-sal-delay="100"
               data-sal-easing="ease"
             >
 

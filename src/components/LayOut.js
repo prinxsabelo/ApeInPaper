@@ -135,7 +135,7 @@ const LayOut = () => {
                     detectRetina: true,
                 }}
             />
-            <div className='layout'>
+            <div className='layout bg-bg'>
                 <header>
                     <Navbar toggleSidebar={toggleSidebar} isOpen={isOPen} />
                     <Sidebar toggleSidebar={toggleSidebar} isOpen={isOPen} />
