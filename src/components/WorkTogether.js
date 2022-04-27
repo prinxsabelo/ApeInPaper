@@ -6,7 +6,7 @@ const queryMedia = graphql`
   {
     contentfulWorkTogImage {
         image {
-          gatsbyImageData(placeholder: TRACED_SVG)
+          gatsbyImageData(placeholder: BLURRED)
         }
     }
   }

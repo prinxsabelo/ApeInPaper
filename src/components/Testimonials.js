@@ -15,7 +15,7 @@ const query = graphql`
       name
       role
       image {
-        gatsbyImageData
+        gatsbyImageData(placeholder: BLURRED)
       }
       message
     }
