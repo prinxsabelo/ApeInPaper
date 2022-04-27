@@ -37,7 +37,7 @@ const Crypto = () => {
                     crypto, NFT, and fintech related businesses.
                 </p>
             </div>
-            <div className='flex flex-wrap justify-center my-4 mt-6'>
+            <div className='flex flex-wrap justify-center space-x-4 md:space-x-4  mt-6'>
                 {trusted.map((t, index) => {
                     const pathToDemoImage = getImage(t.image);
                     return (
@@ -45,7 +45,7 @@ const Crypto = () => {
                             data-sal="slide-left"
                             // data-sal-delay={`${index + 1}00`}
                             data-sal-easing="ease"
-                            className='w-full w-24 h-24 bg-gray-100  mr-4 md:mr-8  mb-8'>
+                            className='w-full w-20 h-20 md:w-24 md:h-24 bg-gray-100  mb-8'>
                             <GatsbyImage image={pathToDemoImage} alt=""
                             />
                         </div>
