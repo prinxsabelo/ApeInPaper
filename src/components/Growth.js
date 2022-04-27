@@ -1,8 +1,20 @@
 import React from 'react'
-import growth from '../assets/images/growth.png';
 import ButtonLink from './ButtonLink';
+import { graphql, useStaticQuery } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
+const queryMedia = graphql`
+  {
+    contentfulGrowthImage {
+        image {
+          gatsbyImageData
+        }
+    }
+  }
+`;
 const Growth = () => {
+    const media = useStaticQuery(queryMedia);
+    const pathToDemoImage = getImage(media.contentfulGrowthImage.image);
     return (
         <div className='core-values pt-16 md:pt-40  px-4 md:px-32 bg-bg max-w-screen-xl flex flex-col md:space-y-24'>
 
@@ -46,8 +58,7 @@ const Growth = () => {
 
                 </div>
                 <div className='hidden md:flex w-10/12 md:w-2/5'>
-                    <img src={growth} alt="growth" className='object-contain w-full h-full' />
-
+                    <GatsbyImage image={pathToDemoImage} alt="" />
                 </div>
             </div>
             <div className='flex flex-col w-full md:items-center space-y-4 mt-4 md:mt-8'

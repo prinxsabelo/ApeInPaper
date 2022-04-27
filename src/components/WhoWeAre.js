@@ -7,7 +7,7 @@ const queryMedia = graphql`
   {
     contentfulWhoWeAreImage {
         image {
-          gatsbyImageData(placeholder: TRACED_SVG)
+          gatsbyImageData(placeholder: BLURRED)
         }
     }
   }
