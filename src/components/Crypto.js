@@ -45,7 +45,7 @@ const Crypto = () => {
                             data-sal="slide-left"
                             // data-sal-delay={`${index + 1}00`}
                             data-sal-easing="ease"
-                            className='w-full  md:w-36 md:h-36 bg-gray-100  mr-4 md:mr-8  mb-8'>
+                            className='w-full w-24 h-24 bg-gray-100  mr-4 md:mr-8  mb-8'>
                             <GatsbyImage image={pathToDemoImage} alt=""
                             />
                         </div>
