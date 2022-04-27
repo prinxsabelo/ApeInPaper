@@ -3,6 +3,7 @@ import LayOut from "../components/LayOut"
 
 export default function Home() {
 
+
     return (
         <div>
             <LayOut />
