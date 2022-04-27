@@ -6,7 +6,7 @@ import {
     FaEnvelope,
     FaLocationArrow
 } from "react-icons/fa"
-import Logo from '../../static/ape.jpg';
+import Logo from '../../static/ape.png';
 
 
 const Footer = () => {
