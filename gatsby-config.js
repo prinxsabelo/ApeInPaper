@@ -51,6 +51,16 @@ module.exports = {
         theme_color: `#FCA800`,
         display: `standalone`,
         icon: `src/images/icon.png`,
+        cache_busting_mode: 'none'
+      }
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/`],
+        workboxConfig: {
+          globPatterns: ['**/icon-path*']
+        }
       }
     },
 
