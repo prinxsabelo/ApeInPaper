@@ -1,7 +1,20 @@
 import React from 'react'
-import tog from '../assets/images/tog.svg';
+import { graphql, useStaticQuery } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
+const queryMedia = graphql`
+  {
+    contentfulWorkTogImage {
+        image {
+          gatsbyImageData(placeholder: TRACED_SVG)
+        }
+    }
+  }
+`
 
 const WorkTogether = () => {
+    const media = useStaticQuery(queryMedia);
+    const pathToDemoImage = getImage(media.contentfulWorkTogImage.image);
     return (
         <div className='px-4 md:px-32 mt-14 md:mt-24 flex flex-col flex-col-reverse md:flex-row items-center'>
             <div className='w-full md:w-1/2 flex flex-col space-y-4' data-sal="fade"
@@ -28,7 +41,8 @@ const WorkTogether = () => {
             <div className='w-1/2' data-sal="slide-up"
                 // data-sal-delay="100"
                 data-sal-easing="ease">
-                <img src={tog} alt="work" />
+                <GatsbyImage image={pathToDemoImage} alt=""
+                />
             </div>
         </div>
     )

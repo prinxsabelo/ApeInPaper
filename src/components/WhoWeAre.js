@@ -1,9 +1,21 @@
 import React from 'react'
-import kerfin from '../assets/images/kerfin.png';
 import ButtonLink from './ButtonLink';
+import { graphql, useStaticQuery } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
+const queryMedia = graphql`
+  {
+    contentfulWhoWeAreImage {
+        image {
+          gatsbyImageData(placeholder: TRACED_SVG)
+        }
+    }
+  }
+`
 
 const WhoWeAre = () => {
+    const media = useStaticQuery(queryMedia);
+    const pathToDemoImage = getImage(media.contentfulWhoWeAreImage.image);
     return (
         <div className='px-4 md:px-32 bg-bg'>
             <h3 className='font-bold text-lg md:text-3xl  tracking-wide'
@@ -18,8 +30,7 @@ const WhoWeAre = () => {
             >
                 <div className='hidden md:flex md:w-2/5'>
                     <div className='w-9/12'>
-                        <img src={kerfin} alt="kerfin" className='w-full h-full' />
-
+                        <GatsbyImage image={pathToDemoImage} alt="" />
                     </div>
                 </div>
                 <div className='w-full md:w-3/5 flex flex-col space-y-4 text-base md:text-lg' >

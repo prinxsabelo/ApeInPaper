@@ -8,14 +8,13 @@ const queryMedia = graphql`
   {
     contentfulStandOutMedia {
       image {
-        gatsbyImageData(placeholder: BLURRED)
+        gatsbyImageData(placeholder: TRACED_SVG)
       }
     }
   }
 `
 const StandOut = () => {
     const media = useStaticQuery(queryMedia);
-    // const image = media.contentfulStandOutMedia.image;
     const pathToDemoImage = getImage(media.contentfulStandOutMedia.image);
 
     return (
@@ -59,7 +58,6 @@ const StandOut = () => {
             </div>
             <div className='w-full md:w-1/2 hidden md:flex'
                 data-sal="slide-up"
-                // data-sal-delay="100"
                 data-sal-easing="ease">
                 <GatsbyImage image={pathToDemoImage} alt=""
                 />
