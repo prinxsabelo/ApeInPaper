@@ -18,7 +18,6 @@ import StandOut from './StandOut';
 import FrequentQuestions from './FrequentQuestions';
 import WorkTogether from './WorkTogether';
 import Footer from './Footer';
-
 const LayOut = () => {
     const [isOPen, setIsOpen] = useState(false);
     const toggleSidebar = () => {
@@ -33,7 +32,7 @@ const LayOut = () => {
                 <title>Ape In Paper</title>
                 <link rel="canonical" href="https://apinpaper.io" />
 
-                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+                <link rel="shortcut icon" href="./../" type="image/x-icon" />
                 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

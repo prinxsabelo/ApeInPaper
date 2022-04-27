@@ -18,6 +18,27 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-styled-components`,
+
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `ApeInPaper`,
+        short_name: `ApeInPaper`,
+        start_url: `/`,
+        background_color: `#1f1600`,
+        theme_color: `#FCA800`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+        workboxConfig: {
+          globPatterns: ['**/icon-path*']
+        }
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
