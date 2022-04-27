@@ -41,7 +41,18 @@ module.exports = {
         defaultQuality: 75,
       },
     },
-
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `ApeInPaper`,
+        short_name: `ApeInPaper`,
+        start_url: `/`,
+        background_color: `#1f1600`,
+        theme_color: `#FCA800`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      }
+    },
 
   ],
 
