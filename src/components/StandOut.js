@@ -8,7 +8,7 @@ const queryMedia = graphql`
   {
     contentfulStandOutMedia {
       image {
-        gatsbyImageData(placeholder: TRACED_SVG)
+        gatsbyImageData(placeholder: BLURRED)
       }
     }
   }
