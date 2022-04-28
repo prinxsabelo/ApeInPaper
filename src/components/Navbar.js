@@ -6,7 +6,7 @@ import Logo from '../../static/ape.png';
 const Navbar = ({ toggleSidebar, isOpen }) => {
 
     return (
-        <nav className="navbar px-4 bg-bg">
+        <nav className="navbar px-8 bg-bg">
             <div className="nav-center py-1 pb-3 flex items-center" >
                 <div className="nav-header">
                     <div className='w-12 h-12'>
