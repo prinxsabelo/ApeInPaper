@@ -6,8 +6,8 @@ import Logo from '../../static/ape.png';
 const Navbar = ({ toggleSidebar, isOpen }) => {
 
     return (
-        <nav className="navbar py-4 px-4 bg-bg">
-            <div className="nav-center">
+        <nav className="navbar px-4 bg-bg">
+            <div className="nav-center py-1 pb-3 flex items-center" >
                 <div className="nav-header">
                     <div className='w-12 h-12'>
                         <img src={Logo} className="object-contain" alt='logo' />
