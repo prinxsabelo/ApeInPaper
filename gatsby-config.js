@@ -53,16 +53,8 @@ module.exports = {
         icon: `src/images/icon.png`,
         cache_busting_mode: 'none'
       }
-    },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/`],
-        workboxConfig: {
-          globPatterns: ['**/icon-path*']
-        }
-      }
-    },
+    }
+
 
   ],
 
