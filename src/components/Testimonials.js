@@ -9,7 +9,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const query = graphql`
 {
-  allContentfulTestimony {
+  allContentfulTestimony(sort: {order: ASC, fields: createdAt}) {
     nodes {
       id
       name
@@ -17,7 +17,9 @@ const query = graphql`
       image {
         gatsbyImageData(placeholder: BLURRED)
       }
-      message
+      message {
+          message
+      }
     }
   }
 }
@@ -62,10 +64,10 @@ const Testimonials = () => {
                                     text-sm md:text-base
                                         justify-center items-center px-1 md:px-2'>
                                     <GatsbyImage image={pathToDemoImage}
-                                        className="rounded-full" alt={test.name}
+                                        className="rounded-full w-24 h-24" alt={test.name}
                                     />
-                                    <p className='text-center w-full md:w-11/12 bg-bg '>
-                                        {test.message}
+                                    <p className='text-center tracking-wider text-sm w-full md:w-11/12 bg-bg '>
+                                        {test.message.message}
                                     </p>
                                     <div className='text-center bg-bg'>
                                         <p className='font-semibold'>
