@@ -27,7 +27,7 @@ const Hero = ({herosection, heroSectionVideo}:any) => {
               <img src="/assets/images/ape-man.png" className="lg:inline-flex hidden w-2/5" alt="Ape-Man"/>
           </div>
         </Bgimage>
-        <div className='md:h-64 mt-24 lg:mt-32 h-80 relative'>
+        <div className='md:h-64 mt-24 lg:mt-44 h-80 relative'>
           <div className='h-96 grid stripes w-full'>
             <span></span>
             <span></span>
