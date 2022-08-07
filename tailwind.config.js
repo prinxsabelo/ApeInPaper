@@ -1,18 +1,18 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        'bg': '#1f1600',
-        'brand': '#FCA800',
-        'core': '#392900'
-      },
+        back: '#1F1600',
+        about: '#40310E',
+        active: '#FCA800',
+        values: '#392900',
+      }
     },
   },
   plugins: [],
 }
-
-
-// 'bg': '#1f1600',
